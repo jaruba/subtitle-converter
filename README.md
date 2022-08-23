@@ -67,6 +67,12 @@ function convertFile(fileObject) {
 
 **removeTextFormatting** (boolean) - Default is `false`. If set to `true`, tags such as `<b>` and `{bold}` will be stripped from the text. This may be useful when converting to formats that do not support styling in this manner.
 
+**removeSsaFormatting** (boolean) - Default is `false`. If set to `true`, text formatting is removed for SSA only
+
+**removeSrtFormatting** (boolean) - Default is `false`. If set to `true`, text formatting is removed for SRT only
+
+**removeVttFormatting** (boolean) - Default is `false`. If set to `true`, text formatting is removed for VTT only
+
 **timecodeOverlapLimiter** (number, boolean) - Default is `false`, allowing overlapping timecode. If a number (in seconds) is included `subtitle-converter` will automatically fix overlapping timecode if the amount of seconds the text overlaps is less than the `timecodeOverlapLimiter`.
 - If this value is set to `1` and your SRT looks like:
 ```
